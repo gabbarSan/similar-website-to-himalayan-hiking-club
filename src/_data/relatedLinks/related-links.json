@@ -1,0 +1,37 @@
+{
+  "title": "Related Links",
+  "dataList": [
+    {
+      "relatedLinkName": "Treking destinations in Uttrakhand",
+      "relatedLinkValue": "../himalayan-treks"
+    },
+    {
+      "relatedLinkName": "Kuari Pass Trek – Uttrakhand",
+      "relatedLinkValue": "../kuari-pass-trek"
+    },
+    {
+      "relatedLinkValue": "../roopkund-trek",
+      "relatedLinkName": "Roopkund Trek – Uttrakhand"
+    },
+    {
+      "relatedLinkValue": "../valley-of-flowers-trek",
+      "relatedLinkName": "Valley of Flowers Trek – Uttrakhand"
+    },
+    {
+      "relatedLinkName": "Har Ki Dun – Uttrakhand",
+      "relatedLinkValue": "../har-ki-dun-trek-uttrakhand"
+    },
+    {
+      "relatedLinkValue": "../brahmatal-bekaltal-winter-trek-uttrakhand",
+      "relatedLinkName": "Brahmatal, Bekaltal – Uttrakhand"
+    },
+    {
+      "relatedLinkValue": "../kedarkantha-peak-trek",
+      "relatedLinkName": "Kedarkantha Peak Trek"
+    },
+    {
+      "relatedLinkName": "Dayara Bugyal Trek",
+      "relatedLinkValue": "../dayara-bugyal-trek"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<body></body>
+	{%- include 'himalayanProfile/profileSections/headerBootstrap.njk' -%}
+	<div class="container">
+		{%- include 'himalayanProfile/profileSections/sectionMain.njk' -%}
+	</div><!-- End container -->
+	{%- include 'himalayanProfile/profileSections/sectionFooter.njk' -%}
+
+	<script>
+		if (window.netlifyIdentity) {
+		  window.netlifyIdentity.on("init", user => {
+			if (!user) {
+			  window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			  });
+			}
+		  });
+		}
+	  </script>
+</body>

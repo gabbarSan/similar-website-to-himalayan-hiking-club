@@ -1,0 +1,19 @@
+--- 
+title: Blog Listings
+layout: "base.njk"
+--- 
+<main>
+       
+<div class="section container">
+<h1 class="section-title">Recent articles</h1>
+<ul class="articles__list flow">
+    {%- for post in collections.post -%}
+    <li>
+        <artcle class="snippet">
+            <h3 class="snippet__title">{{ post.data.title }}</h3>
+        </artcle>
+    </li>
+    {%- endfor -%}
+</ul>
+</div>
+

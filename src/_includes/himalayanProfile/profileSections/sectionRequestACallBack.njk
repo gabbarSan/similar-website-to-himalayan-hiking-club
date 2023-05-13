@@ -1,0 +1,28 @@
+<div class="box-ribbon">
+    <div class="rectangle">
+        <h4>Have a Question?</h4>
+    </div>
+    <div class="triangle-l"></div>
+    <div class="triangle-r"></div>
+    <br class="clearfix">
+    <div id="questionDisplayMsg"></div>
+    <div id="message-quick-booking">
+    </div>
+    <form method="post" action="assets/quick_booking.php" id="quick_booking" autocomplete="off">
+        <div class="form-group">
+            <input type="text" class="form-control" id="questionUsrName" name="name_quick_booking" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <input type="email" name="email_quick_booking" id="questionUsrEmail" class="form-control" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <input type="text" name="phone_quick_booking" id="questionUsrPhone" class="form-control " placeholder="Enter Phone number">
+        </div>
+        <div class="form-group">
+            <textarea type="text" name="phone_quick_booking" id="questionUsrMsg" class="form-control " placeholder="Message"></textarea>
+        </div>
+        <button id="otBtnSubmitQuestion" type="button" class="button_medium" onclick="submitRequestCallBackInfo(questionUsrName, questionUsrPhone, questionUsrEmail, questionUsrMsg, questionDisplayMsg, otBtnSubmitQuestion)">Submit</button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" class="button_medium" data-dismiss="modal">Close</button>
+    </form>
+</div>

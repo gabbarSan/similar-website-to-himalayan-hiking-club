@@ -1,0 +1,10 @@
+<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    <p>Mountain/adventure travel requires one to be adequately equipped with the right kind of personal gear. Since one is travelling in the wilderness there will be hardly any opportunity to buy anything once you hit the trail so we urge you to carefully pack everything into your bags. Also please keep in mind you can rent out or purchase equipment from our Gear Store, if required.</p>
+    <ul>
+        {%- for item in staticLists.listOfEssentials.dataList -%}
+            <li>{{ item.value | safe }}</li>
+        {%- endfor -%}
+    </ul>
+    <p><strong>&hellip;LOADS OF ENTHUSIASM!! AND A PLEDGE TO LEAVE NO TRACE</strong><br />Carry your stuff in a duffel bag, soft shoulder bag or a rucksack. Avoid suitcases, trolleys or any other hard luggage. As you will be walking long distances carrying a rucksack, avoid bringing unnecessary items on the trek. Please avoid carrying expensive watches, jewellery and electronic items on the trek</p>
+    <p><br /><strong>Note:</strong> In case you are planning to put your bag on a mule or taking a porter please get a duffel bag or rucksack and keep it in mind that there is a possibility that the bag at times might brush against a rock or a tree and get slightly damaged so don't get very expensive bags. Also in case of damage we shall not be held accountable.</p>
+</div>

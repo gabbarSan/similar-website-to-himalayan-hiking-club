@@ -1,0 +1,23 @@
+{
+  "title": "Exclusions List",
+  "dataList": [
+    {
+      "value": "Any kind of personal expenses."
+    },
+    {
+      "value": "Food during the transit."
+    },
+    {
+      "value": "Mules or porter to carry personal luggage."
+    },
+    {
+      "value": "Insurance."
+    },
+    {
+      "value": "Any kind of emergency evacuation charges."
+    },
+    {
+      "value": "Anything not specifically mentioned under the head."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<h3>{{ sectionOverview }}</h3>
+<p>
+    {%- for bullet in sectionOverviewBullets -%}
+        {{ bullet | safe }}<br>
+    {%- endfor -%}
+</p>
+<p>{{ sectionOverviewDescription | safe }}</p>
+<hr>

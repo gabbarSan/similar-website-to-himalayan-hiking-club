@@ -1,0 +1,57 @@
+<h4>Testimonials</h4>
+<div id="carouselTestimonialIndicator" class="carousel slide">
+    <!-- div class="carousel-indicators">
+        {%- for testimonial in testimonialsData["user-testimonials"].testimonialsList -%}  
+            {% if loop.index == 1 %}     
+                <button type="button" data-bs-target="#carouselTestimonialIndicator" data-bs-slide-to="{{loop.index - 1}}" class="active" aria-current="true" aria-label="Slide {{loop.index}}"></button>
+            {% else %}
+                <button type="button" data-bs-target="#carouselTestimonialIndicator" data-bs-slide-to="{{loop.index - 1}}" aria-label="Slide {{loop.index}}"></button>
+            {% endif %}
+        {%- endfor -%}
+    </div -->
+    <div class="carousel-inner">
+        {%- for testimonial in testimonialsData["user-testimonials"].testimonialsList -%}  
+            {% if loop.index == 1 %}
+            <div class="carousel-item active">
+                <div>
+                    <blockquote class="testimonial">
+                        <p>{{ testimonial.userTestimonialDetail | safe }}</p>
+                    </blockquote>
+                    <div class="testimonial-arrow-down">
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="img-thumbnail img-thumbnail-small">
+                        <img class="img-circle" src="{{ testimonial.userProfileImage }}" alt="">
+                        </div>
+                        <p><strong>"{{ testimonial.userName | safe }}"</strong><span>{{ testimonial.userRelationship | safe }}</span></p>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+                <div class="carousel-item">
+                    <div>
+                        <blockquote class="testimonial">
+                            <p>{{ testimonial.userTestimonialDetail | safe }}</p>
+                        </blockquote>
+                        <div class="testimonial-arrow-down">
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="img-thumbnail img-thumbnail-small">
+                            <img class="img-circle" src="{{ testimonial.userProfileImage }}" alt="">
+                            </div>
+                            <p><strong>"{{ testimonial.userName | safe }}"</strong><span>{{ testimonial.userRelationship | safe }}</span></p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {%- endfor -%}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonialIndicator" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonialIndicator" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>

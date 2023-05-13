@@ -1,0 +1,35 @@
+--- 
+title: Discover Himalayas with these amazing treks
+description: Witness the mesmerizing beauty of the mighty Himalayas with these treks custom created just for you.
+metaTitle: Discover Himalayas and witness their mesmerizing beauty with HIMALAYAN HIKING CLUB
+metaDescription: Witness the mesmerizing beauty of the mighty Himalayas with these few hikes custom created just for you. Our staff with vast experience, love for mountains, and friendly attitude would definitely provide you with a memorable experience.
+layout: "himalayanListingBase.njk"
+permalink: ls/discover-himalayas-with-some-amazing-treks/index.html
+--- 
+       
+{%- for trek in collections.trek -%}
+<div class="media list_1">
+    <div class="pull-right" ><a href="{{ trek.url }}"><img src="{{ trek.data.listingPageImage | safe }}" alt="{{ trek.data.listingPageImageAlt | safe }}" class="img-rounded styled"></a></div>
+    <div class="media-body">
+        <a href="{{ trek.url }}"><h3 class="media-heading">{{ trek.data.title | safe }} <small class="price_2">₹{{ trek.data.trekPrice | safe }}</small></h3></a>
+        <p>{{ trek.data.shortDescription | safe }}</p>
+        <ul class="list-highlights">
+            <li><i class="icon-clock"></i>{{ trek.data.trekDuration | safe }}</li>
+                <li class="po-markup">
+                <i class="icon-list-numbered"></i> <a class="po-link" href="javascript:void(0)" >{{ trek.data.trekLevelType | safe }}</a>
+                    <div class="po-content hidden">
+                    <div class="po-title"><strong>{{ trek.data.trekLevelType | safe }}</strong></div> <!-- ./po-title -->
+                    <div class="po-body">
+                        <p class="no_margin">{{ trek.data.trekLevelDescription | safe }}</p>
+                    </div><!-- ./po-body -->
+                </div><!-- ./po-content -->
+            </li>
+        </ul>
+        <a href="{{ trek.url }}" class="btn btn-primary btn-sm btn-listing" role="button" data-bs-toggle="button">Read more</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="#requestCallBack" data-toggle="modal" class="btn btn-primary btn-sm btn-listing">Quick Enquiry</a>
+    </div> <!-- END - media-body -->
+</div><!-- END media list_1 -->
+{%- endfor -%}
+
+

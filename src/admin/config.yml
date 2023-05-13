@@ -1,0 +1,111 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "src/assets/templates/images"
+public_folder: "/assets/templates/images"
+collections:
+  - name: "himalayanProfile"
+    label: "Trek Name"
+    folder: "src/himalayanProfile"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title Short", name: "titleShort", widget: "string" }
+      - { label: "URL for This Page", name: "permalink", widget: "string" }
+      - { label: "Short Description", name: "shortDescription", widget: "string" }
+      - { label: "Meta Title for SEO", name: "metaTitle", widget: "string" }
+      - { label: "Meta Description for SEO", name: "metaDescription", widget: "string" }
+      - { label: "Trek Price", name: "trekPrice", widget: "string" }
+      - { label: "Trek Level Type", name: "trekLevelType", widget: "string" }
+      - { label: "Trek Level Description", name: "trekLevelDescription", widget: "string" }
+      - { label: "Trek Duration", name: "trekDuration", widget: "string" }
+      - { label: "Banner Image", name: "bannerImage", widget: "image" }
+      - { label: "Banner Image Alt", name: "imageAlt", widget: "string" }
+      - { label: "Listing Page Image", name: "listingPageImage", widget: "image" }
+      - { label: "Listing Page Image Alt", name: "listingPageImageAlt", widget: "string" }
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        fields:
+          - { label: "Source", name: "src", widget: "image" }
+          - { label: "Alt Text", name: "alt", widget: "string" }
+        default:
+          - { src: "/assets/templates/images/profile/kedarkantha-peak-trek/kedarkantha-peak-trek-2.jpg", alt: "Tennis" }
+          - { src: "/assets/templates/images/profile/kedarkantha-peak-trek/kedarkantha-peak-trek-3.jpg", alt: "Football" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Brief Description", name: "description", widget: "string" }
+      - { label: "Section Overview Heading", name: "sectionOverview", widget: "string" }
+      - { label: "Section Overview Bullets", name: "sectionOverviewBullets", widget: "list" }
+      - { label: "Section Overview Description", name: "sectionOverviewDescription", widget: "text"}
+      - { label: "Section Short Itinerary", name: "sectionShortItinerary", widget: "string" }
+      - { label: "Section Short Itinerary Bullets", name: "sectionShortItineraryBullets", widget: "list" }
+      - { label: "Section Weather", name: "sectionWeather", widget: "string" }
+      - { label: "Section Weather Description", name: "sectionWeatherDescription", widget: "text" }
+      - label: "Itinerary"
+        name: "itineraryList"
+        widget: "list"
+        fields:
+          - { label: "Display Pic - Image should be 200 x 150 px", name: "image", widget: "image" }
+          - { label: "Display Pic Alt Text", name: "imageAlt", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Itinerary Description", name: "description", widget: "string" }
+  - name: "common-data"
+    label: "Common Data"
+    extension: "json"
+    folder: "src/_data/staticLists"
+    create: false
+    slug: "{{slug}}"
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Data List"
+        name: "dataList"
+        widget: "list"
+        fields:
+          - { label: "List Item", name: "value", widget: "string" }
+  - name: "testimonials-data"
+    label: "User Testimonials"
+    extension: "json"
+    folder: "src/_data/testimonialsData"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" } 
+      - label: "Data List"
+        name: "dataList"
+        widget: "list"
+        fields:
+        - { label: "User Name", name: "userName", widget: "string" }
+        - { label: "User Image - Image should be 150 x 150 px", name: "userProfileImage", widget: "image" }
+        - { label: "User Relationship", name: "userRelationship", widget: "string", default: "Customer"}
+        - { label: "User Testimonial Summary", name: "userTestimonialSummary", widget: "string", default: ""}
+        - { label: "User Testimonial Detail", name: "userTestimonialDetail", widget: "string" }
+  - name: "related-links"
+    label: "Related Links Section"
+    extension: "json"
+    folder: "src/_data/relatedLinks"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" } 
+      - label: "Data List"
+        name: "dataList"
+        widget: "list"
+        fields:
+        - { label: "Related Link Display Name", name: "relatedLinkName", widget: "string" }
+        - { label: "Related Link", name: "relatedLinkValue", widget: "string" }
+  - name: "contactUs"
+    label: "Contact US"
+    extension: "json"
+    folder: "src/_data/contactUs"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Phone Number", name: "phoneNumber", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Address", name: "address", widget: "string" }
+      - { label: "Facebook Link", name: "facebookLink", widget: "string" }
+      - { label: "Instagram Link", name: "instagramLink", widget: "string" }
+      - { label: "Copyright Year", name: "copyrightYear", widget: "string" }
+

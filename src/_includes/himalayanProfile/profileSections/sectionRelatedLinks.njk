@@ -1,0 +1,6 @@
+<h4>Related links</h4>
+<ul class="list_1">
+    {%- for link in relatedLinks["related-links"].dataList %}
+        <li><a href="{{ link.relatedLinkValue }}">{{ link.relatedLinkName }}</a></li>
+    {% endfor -%}
+</ul>

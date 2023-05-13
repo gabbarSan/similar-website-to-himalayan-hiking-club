@@ -1,0 +1,588 @@
+/*
+Theme Name: 
+Theme URI: http://www.ansonika.com/volare/
+Author: Ansonika
+Author URI: http://themeforest.net/user/Ansonika/
+
+CSS STRUCTURE:
+
+1. SITE STRUCTURE and TYPOGRAPHY
+2. PAGES AND CONTENT
+3. FORMS
+4. COMMON
+5. MEDIA QUERIES
+
+/*============================================================================================*/
+/* 1.  SITE STRUCTURE and TYPOGRAPHY */
+/*============================================================================================*/
+/* Fonts and Icons */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+
+/* Structure */
+body {
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:20px;
+	margin:0;
+	color:#444;
+	background-color:#fff;
+	-webkit-font-smoothing: antialiased !important;
+}
+/* #Site Header
+================================================ */
+header {
+	background: #827b00 url(../img/bg_header.png) no-repeat center top; 
+	width:100%;
+	position:fixed; left:0; top:0;
+	color:#fff;
+	z-index:999;
+	padding:15px 0;
+	font-family:"Helvetica Neue", Arial;
+}
+#phone strong {
+	font-size:20px;
+}
+a#logo {
+	width:80px;
+	height:73px;
+	background:url(../img/logo9.png) no-repeat 0 0;
+	text-indent:-9999px;
+	display:block;
+}
+#lang {
+	margin-top:8px;
+}
+#lang a.dropdown-toggle{
+	color:rgba(255,255,255,.5);
+}
+footer nav, header nav{ padding:0; margin:0; position:relative; top:0; left:0;}
+
+/* #Site Footer */
+footer {background-color:#827b00; margin-top:60px; position:relative; color:#fff; padding:30px 0 20px 0;}
+#footer_waves { position:absolute; top:-36px; width:100%; height:37px; background:url(../img/mountains_2.png) repeat-x 0 1px; left:0;}
+.footer_nav ul { list-style:none; margin:0 0 25px 0; padding:0;}
+
+footer a { color:#fff;}
+footer a:hover { color: #FF6;}
+#copy { font-size:12px; margin-bottom:0;}
+
+#contact_footer ul{
+	list-style:none;
+	margin:-5px 0 20px 0;
+	padding:0;
+}
+ul#follow_us {
+	list-style:none;
+	padding:0;
+	margin:10px 0 15px 0;
+}
+ul#follow_us  li{
+	font-weight:600;
+}
+
+ul#follow_us  li{
+	display: inline-block;
+	margin-right:10px;
+}
+ul#follow_us  li a{
+	width:34px;
+	color:#fff;
+	height:34px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display:block;
+	line-height:32px;
+	font-size:18px;
+	text-align:center;
+	font-weight:normal;
+}
+ul#follow_us li a:hover{
+	border: 2px solid #FF6;
+	color:#FF6;
+}
+
+/* TYPOGRAPHY and links color */
+p {
+	margin-bottom:20px;
+	text-align: justify;
+	line-height: 1.5;
+}
+p.lead{
+	font-weight:300;
+}
+a {
+  color: #827b00;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a:hover,
+a:focus {
+  color: #111;
+  text-decoration: none;
+}
+.img-circle.styled { 
+	background-color:#ededed;
+	-moz-box-shadow: 0px 0px 0px 5px #ededed; 
+	-webkit-box-shadow: 0px 0px 0px 5px #ededed; 
+	box-shadow: 0px 0px 0px 5px #ededed;
+	margin:5px;
+}
+.img-circle.styled.team { 
+	background-color:#ededed;
+	-moz-box-shadow: 0px 0px 0px 5px #ededed; 
+	-webkit-box-shadow: 0px 0px 0px 5px #ededed; 
+	box-shadow: 0px 0px 0px 5px #ededed;
+	margin:5px 15px ;
+}
+.img-rounded.styled { 
+	background-color:#ededed;
+	-moz-box-shadow: 0px 0px 0px 5px #ededed; 
+	-webkit-box-shadow: 0px 0px 0px 5px #ededed; 
+	box-shadow: 0px 0px 0px 5px #ededed;
+	margin:10px;
+	margin-top:5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	color:#222;
+}
+
+h1 {
+	text-transform:uppercase;
+	font-weight:800;
+	font-size:46px;
+	line-height:48px;
+	margin:0 0 0 0;
+	padding:0;
+}
+h2 {
+	font-size:34px;
+	margin-top:10px;
+}
+
+/*============================================================================================*/
+/*		FOOTER SECTION */
+/*============================================================================================*/
+footer h4{
+	text-transform:uppercase;
+	font-size:16px;
+	font-weight:600;
+	color:#fff;
+}
+/* rope in the footer */
+hr.rope_2 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	background:url(../img/rope_2.png) repeat-x 0 0;
+	height:8px;
+}
+  
+/*============================================================================================*/
+/*		TESTIMONIAL SECTION */
+/*============================================================================================*/
+
+/* Testimonials */
+blockquote.testimonial {
+	background: #f1f0e6;
+	border-radius: 7px;
+	border: 0;
+	font-family: Georgia, serif;
+	font-style: italic;
+	margin: 0;
+	padding: 20px 15px 20px 35px;
+	position: relative;
+}
+
+blockquote.testimonial:before {
+	left: 7px;
+	top: 5px;
+	color: #333;
+	content: "\201C";
+	font-size: 60px;
+	font-style: normal;
+	line-height: 1;
+	position: absolute;
+}
+
+blockquote.testimonial p {
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size:14px;
+	line-height:20px;
+}
+
+/* Testimonials Arrow */
+.testimonial-arrow-down {
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #f2f1e6;
+	height: 0;
+	margin: 0 0 0 25px;
+	width: 0;
+}
+
+/* Testimonials Author */
+.testimonial-author {
+	margin: 8px 0 0 8px;
+}
+
+.testimonial-author .img-thumbnail {
+	float: left;
+	margin-right: 10px;
+}
+
+.testimonial-author .img-thumbnail img {
+	max-width: 60px;
+}
+
+.testimonial-author strong {
+	color: #111;
+	display: block;
+	padding-top: 7px;
+}
+.testimonial-author span {
+	color: #666;
+	display: block;
+	font-size: 12px;
+}
+.testimonial-author p {
+	color: #999;
+	margin: 0 0 0 25px;
+	text-align: left;
+}
+
+/*============================================================================================*/
+/*		PRICE PANEL */
+/*============================================================================================*/
+.price {
+	font-size:42px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	border-bottom:1px solid rgba(255, 255, 255, 0.4);
+	margin-bottom:15px;
+	padding-bottom:15px;
+}
+.price small{
+	font-size:18px;
+	font-weight:600;
+}
+
+/* PRICE PANEL */
+.price-box {
+	background: #403f3f;
+	padding:35px 25px 20px 25px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	color:#fff;
+	margin-bottom:25px;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+/*right tick on the price panel - Start*/
+ul.list_ok {
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-weight:600;
+}
+
+ul.list_ok li {
+	margin-bottom:0;
+	position:relative;
+	padding-left:20px;
+}
+
+ul.list_ok li:before {
+	font-family: "fontello";
+	content: "\e81a";
+	position:absolute;
+	left:0;
+	top:0;
+}
+/*right tick on the price panel - End*/
+
+/*============================================================================================*/
+/*		ITINERARY SECTION */
+/*============================================================================================*/
+.media.list_1 {
+	border-bottom: 1px dashed #ededed;
+	padding-bottom:5px;
+}
+.media.list_1.last {
+	border-bottom: none;
+}
+
+ul.list_1 {
+	list-style:none;
+	margin:0 0 25px 0;
+	padding:0;
+	font-weight:700;
+	font-size:14px;
+}
+ul.list_1 li a {
+	text-decoration:none;
+	padding: 4px 0 4px 0;
+	display:block;
+	margin-bottom:0;
+	border-bottom: 1px solid #efefef;
+}
+ul.list_1 li a:after {
+	font-family: "fontello";
+	content: "\e89b";
+	float:right;
+}
+
+/* Itinerary Section Picture */
+.picture{ position:relative;}
+
+
+/*============================================================================================*/
+/*		COMMON CSS */
+/*============================================================================================*/
+.border {border-right: 1px solid #ededed;}
+.breadcrumb { background:none; padding:0; font-size:12px; margin-top:0; margin-bottom:10px;}
+
+
+/* carousel*/
+.carousel .item{
+  margin: 3px;
+}
+.carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* waves in the mountains in the images in header and footer */ 
+#waves { position:absolute; bottom:-1px; width:100%; height:38px; background: url(../img/mountains_1.png) repeat-x 0 0; left:0; z-index:99;}
+
+/* scroll to top */
+#toTop {width:90px;background:#fff;text-align:center;padding:5px;position:fixed; bottom:10px;right:10px;cursor:pointer; display:none;color:#222;font-size:11px; z-index:999; border: 1px solid #ededed;}
+
+/** plus minus collapse panels Collapse **/   
+.panel-title a {display:block;}
+
+/** list of essentials and exclusions tabs **/   
+.tab-content{padding-top:15px;}
+
+
+/********   *********/
+/****** CUSTOM ******/
+/*******      *******/
+
+#phone {
+	line-height: 70px;
+}
+.testimonial-author .img-thumbnail-small{
+	border-radius: 50px;
+}
+.testimonial-author a{
+	cursor: pointer;
+}
+.req-call-back{
+	padding-top: 2px;
+	padding-right: 10px;
+}
+#phone a{
+	color: #ffffff;
+	cursor: pointer;
+}
+#phone a:hover{
+	color: #111;
+}
+#reqCallBackUsrMsg{
+	min-height: 90px;
+}
+button[disabled]{
+	background: #e0deb4;
+    background: #e0deb4 -moz-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,.2)),color-stop(100%,rgba(0,0,0,.2)));
+    background: #e0deb4 -webkit-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 -o-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 -ms-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+}
+button[disabled]:hover{
+	background: #e0deb4;
+    background: #e0deb4 -moz-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,.2)),color-stop(100%,rgba(0,0,0,.2)));
+    background: #e0deb4 -webkit-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 -o-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 -ms-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    background: #e0deb4 linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+    color: #fff;
+}
+
+ul.list-highlights {
+	margin-left:0;
+	padding-left:0;
+	margin-bottom:25px;
+}
+ul.list-highlights li{
+	display:inline-block;
+	margin-left:5px;
+	padding-left:8px;
+	border-left: 1px solid #ccc;
+	line-height:16px;
+	zoom: 1; *display: inline;
+}
+
+ul.list-highlights  li:first-child{
+	margin-left:0;
+	padding-left:0;
+	border-left: none;
+}
+
+/********   *********/
+/****** CUSTOM SECTION from Bootstrap website style.css ******/
+/*******      *******/
+
+
+.ftco-section{
+	padding: 7em 0; 
+}
+  
+.ftco-no-pt{
+	padding-top: 0; 
+}
+  
+.ftco-no-pb{
+	padding-bottom: 0; 
+}
+
+.justify-content-center{
+	-webkit-box-pack: center !important;
+	-ms-flex-pack: center !important;
+	justify-content: center !important; 
+}
+
+.mb-5,
+.my-5 {
+	margin-bottom: 3rem !important; 
+}
+
+.bg-image{
+	margin-bottom: 15px;
+}
+
+.pull-right{
+	float: right !important;
+}
+.navbar{
+	padding-top: 0;
+	line-height: 3;
+    background-color: #d7c6c6;
+	background: #827b00 url(../img/bg_header.png) no-repeat center top;
+}
+.navbar-brand {
+	color: #1a1919;
+}
+.header-bg-image-text {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.header-bg-image{
+	background-image: url('/assets/templates/images/profile/kedarkantha-peak-trek/kedarkantha-peak-trek-profile-header.jpg');
+	margin-bottom: 15px;
+}
+.navbar-toggler-icon{
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+.container-navbar{
+	background-color: #111;
+	width: 1170px;
+}
+.nav-item{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.navbar-brand{
+	color: #fff;
+}
+.nav-link-header{
+	color: #fff;
+}
+.banner-caption{
+	font-size: 30px;
+	font-weight: 800;
+	margin-top: 5px;
+	margin-bottom: -15px;
+	color: #fff;
+}
+.accordion-header{
+	margin-top: 0;
+}
+.border-content {
+    border: 1px solid #dee2e6 !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.btn-listing {
+	background: #827b00;
+	background: #827b00 -moz-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+	background: #827b00 -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,.2)),color-stop(100%,rgba(0,0,0,.2)));
+	background: #827b00 -webkit-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+	background: #827b00 -o-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+	background: #827b00 -ms-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+	background: #827b00 linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);
+	border-color: #827b00;
+	color: #fff;
+	border: none;
+}
+/*============================================================================================*/
+/*		MEDIA QUERIES */
+/*============================================================================================*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+.btn_gallery{display:none;}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+.border {border-right: none;}
+.btn_gallery{display:none;}
+.btn-group#gallery_btn_set{
+	margin-top:-18px;
+}
+}
+	
+/* From tablet portrait to mobile */
+@media (max-width: 767px)  {
+	.modal {-webkit-overflow-scrolling: touch; z-index: 9999;}
+	header {position:relative;}
+	#slider_home.tp-banner-container {margin-bottom:20px; margin-top:0;}
+	.tp-banner-container {margin-bottom:20px; margin-top:0;}
+	#lang {
+		margin-top:0;
+		position:absolute;
+		top:10px;
+		right:20px;
+		z-index:-1;
+	}
+	.border {border-right: none;}
+
+	h1, h2{ font-size:30px; line-height:32px;}
+	.navbar{
+		padding-top: 0;
+	}
+}	
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+
+.media.list_1 > .pull-left, .media.list_1 > .pull-right{float:none !important; margin-bottom:15px; margin-left:0; margin-right:0;}
+#slider_home.tp-banner-container {margin-bottom:20px; margin-top:0;}
+.tp-banner-container {margin-bottom:0; margin-top:10px;}
+
+}

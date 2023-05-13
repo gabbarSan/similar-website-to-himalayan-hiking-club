@@ -1,0 +1,10 @@
+<div class="price-box">
+    <div class="price">
+        <strong>₹{{ trekPrice }} </strong><small>per person</small>
+    </div>
+    <ul class="list_ok">
+        {%- for item in staticLists.pricePanelList.dataList -%}
+            <li>{{ item.value | safe }}</li>
+        {%- endfor -%}
+    </ul>
+</div>

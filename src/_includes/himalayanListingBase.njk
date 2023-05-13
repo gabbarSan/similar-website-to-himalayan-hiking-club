@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Basic Page Needs -->
+<meta charset="utf-8">
+<title>{{ metaTitle }}</title>
+<meta name="description" content="{{ metaDescription }}">
+<meta name="author" content="HIMALAYAN HIKING CLUB">
+
+  <!-- Favicons-->
+  <link rel="shortcut icon" href="../../assets/templates/img/favicon.ico" type="image/x-icon"/>
+
+  <!-- CSS -->
+  <!-- link href="../../assets/templates/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/templates/css/superfish.css" rel="stylesheet">
+  <link href="../../assets/templates/css/style.css" rel="stylesheet">
+  <link href="../../assets/templates/fontello/css/fontello.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/templates/js/fancybox/source/jquery.fancybox.css?v=2.1.4">
+  <link href="../../assets/templates/css/weather.css" rel="stylesheet" -->
+
+  	<!-- CSS -->
+	<!-- link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" -->
+	<link href="../../assets/templates/css/bootstrap-latest-web.css" rel="stylesheet">
+
+  <link href="../../assets/templates/css/style.css" rel="stylesheet">
+  
+  <!-- Owl Carousel Assets -->
+  <link href="../../assets/templates/css/owl.carousel.css" rel="stylesheet">
+  <link href="../../assets/templates/css/owl.theme.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- SLIDER REVOLUTION -->
+  <link rel="stylesheet" href="../../assets/templates/css/extralayers.css" media="screen" />	
+  <link rel="stylesheet" href="../../assets/templates/css/navstylechange.css" media="screen" />
+  <link rel="stylesheet" href="../../assets/templates/rs-plugin/css/settings.css" media="screen" />
+
+</head>
+
+<body>
+    {%- include 'himalayanProfile/profileSections/headerBootstrap.njk' -%}
+
+<div class="container">
+
+  <!-- div class="tp-banner-container">
+     <div class="tp-banner" >
+    	<ul>
+    		<li data-transition="fade" data-slotamount="1" data-masterspeed="500" data-saveperformance="on" >
+    		<img src="../../assets/templates/images/common/himalayan-hiking-club-listing-page-hike-list-list-of-treks.jpg" alt=""  data-bgposition="center top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center center">
+            <div class="tp-caption white_heavy_70 tp-fade fadeout tp-resizeme"
+    			data-x="center" data-hoffset="0"
+    			data-y="center" data-voffset="10"
+    			data-speed="500"
+    			data-start="500"
+    			data-easing="Power4.easeOut"
+    			data-splitin="chars"
+    			data-splitout="chars"
+    			data-elementdelay="0.05"
+    			data-endelementdelay="0.05"
+    			data-endspeed="300"
+    			data-endeasing="Power1.easeOut"
+    			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">OUR HIKES
+    		</div>
+    		</li>
+    	</ul>
+    </div>
+  	<div id="waves"></div>
+  </div --><!-- End slider -->
+
+ 	<div class="row">
+  	<div class="col-md-9 border">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">Home</li>
+          <li class="breadcrumb-item active" aria-current="page">Our Treks</li>
+        </ol>
+      </nav>  
+      <h1>{{ title }}</h1>
+      <p class="lead">{{ description }} </p>
+      <hr class="rope">
+      
+      {{ content | safe }}
+    </div><!-- End col-md-9 -->
+      
+    <aside class="col-md-3">
+        <!-- Section Testimonial -->
+        {%- include 'himalayanProfile/profileSections/sectionTestimonials.njk' -%}
+        <br>
+        <!-- div class="read-reviews">
+            <a href="https://www.google.com/maps/place/Outdoor+Hikers/@30.2987056,78.050428,17z/data=!3m1!4b1!4m11!1m5!8m4!1e1!2s113856564507238183151!3m1!1e1!3m4!1s0x390929e2c78fd7e1:0x4542f634d7fd909a!8m2!3d30.298701!4d78.052622?hl=en-IN" target="_blank">
+            <p>Read our Reviews on Google</p>
+            <img src="../../assets/templates/images/common/GOOGLE-LOGO.png" />
+            </a>
+        </div -->
+        <hr>
+        <!-- Section Related Links -->
+        {%- include 'himalayanProfile/profileSections/sectionRelatedLinks.njk' -%}
+      <!-- p class="hidden-sm"><img src="../../assets/templates/img/banner_2.jpg" class="img-responsive" alt="Banner"></p -->
+    </aside><!-- End col-md-3 -->
+  </div><!-- End row -->
+        
+</div><!-- End container -->
+
+{%- include 'himalayanProfile/profileSections/sectionFooter.njk' -%}
+
+</body>
+</html>

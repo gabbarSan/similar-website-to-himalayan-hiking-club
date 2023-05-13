@@ -1,0 +1,63 @@
+{
+  "title": "User Testimonials",
+  "testimonialsList": [
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userName": "Ashwini",
+      "userProfileImage": "/assets/templates/images/ashwini-profile.jpg",
+      "userTestimonialDetail": "Amazed again! This was the second winter trek in Uttarakhand and I must say this place seize to amaze me again and again. Not only the basic facilities were amazing but proper attention to the nutrition, comfortable tents ,sleeping bags with lining , hot chocolate and of course the magical games to keep us moving through out the day in the freezing temperatures added to the extra warmth. Very thoughtful and innovative ideas by HHC to keep  the group engaged and fit throughout the trek. Thanks HHC for that extra warmth and an experience that humbled me and at the same time fulfilled me."
+    },
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userTestimonialDetail": "I am  really thankful to all the members of HHC team who are dedicated to make your trek success without any difficulties. Moreover,The hike was as much about learning the geology, flora, fauna, and “leave no trace” principles as it was about seeing the Himalayas Brahmataal trek with HHC was, hands down, THE MOST MAGNIFICENT experience i ever had!",
+      "userName": "Ashwin",
+      "userProfileImage": "/assets/templates/images/ashwin-profile.jpg"
+    },
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userTestimonialDetail": "I wanted the year to end magical and snowy... i thought it would be Europe... But I did something incredibly better TREK WITH Himalayan Hiking Club in the majestic #himalayas. As one of the  trek leaders (Vikrant Shirdade) quoted Sir Edmund \\\"you dont conquer the mountain, you conquer yourself\\\". A humbling experience that makes you grateful and tells you that the irritations one faces everyday is nothing compared to the beauty out there. Thanks Himalayan Hiking Club and specially to Saurabh for empowering me. You rock!",
+      "userProfileImage": "/assets/templates/images/nuthan-profile.jpg",
+      "userName": "Nuthan"
+    },
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userTestimonialDetail": "This was my first Himalyan Trek and The HHC team made my trip to the Himalayas a very unforgettable one!! Right from the planning to booking it was very smooth experience and response time was amazing. What truly made the experience is that they follow conventional trekking with limited group size paying special attention to the beginners. Thinking to step out in Himalayas  for first time then highly recommend HHC !!",
+      "userName": "Smita",
+      "userProfileImage": "/assets/templates/images/smita-profile.jpg"
+    }
+  ],
+  "dataList": [
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userName": "Ashwini",
+      "userProfileImage": "/assets/templates/images/ashwini-profile.jpg",
+      "userTestimonialDetail": "Amazed again! This was the second winter trek in Uttarakhand and I must say this place seize to amaze me again and again. Not only the basic facilities were amazing but proper attention to the nutrition, comfortable tents ,sleeping bags with lining , hot chocolate and of course the magical games to keep us moving through out the day in the freezing temperatures added to the extra warmth. Very thoughtful and innovative ideas by HHC to keep  the group engaged and fit throughout the trek. Thanks HHC for that extra warmth and an experience that humbled me and at the same time fulfilled me."
+    },
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userName": "Ashwin",
+      "userProfileImage": "/assets/templates/images/ashwin-profile.jpg",
+      "userTestimonialDetail": "I am  really thankful to all the members of HHC team who are dedicated to make your trek success without any difficulties. Moreover,The hike was as much about learning the geology, flora, fauna, and “leave no trace” principles as it was about seeing the Himalayas Brahmataal trek with HHC was, hands down, THE MOST MAGNIFICENT experience i ever had!"
+    },
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userName": "Nuthan",
+      "userProfileImage": "/assets/templates/images/nuthan-profile.jpg",
+      "userTestimonialDetail": "I wanted the year to end magical and snowy... i thought it would be Europe... But I did something incredibly better TREK WITH Himalayan Hiking Club in the majestic #himalayas. As one of the  trek leaders (Vikrant Shirdade) quoted Sir Edmund \\\\\\\"you dont conquer the mountain, you conquer yourself\\\\\\\". A humbling experience that makes you grateful and tells you that the irritations one faces everyday is nothing compared to the beauty out there. Thanks Himalayan Hiking Club and specially to Saurabh for empowering me. You rock!"
+    },
+    {
+      "userRelationship": "Customer",
+      "userTestimonialSummary": "Blank",
+      "userTestimonialDetail": "This was my first Himalyan Trek and The HHC team made my trip to the Himalayas a very unforgettable one!! Right from the planning to booking it was very smooth experience and response time was amazing. What truly made the experience is that they follow conventional trekking with limited group size paying special attention to the beginners. Thinking to step out in Himalayas  for first time then highly recommend HHC !!",
+      "userName": "Smita",
+      "userProfileImage": "/assets/templates/images/smita-profile.jpg"
+    }
+  ]
+}
